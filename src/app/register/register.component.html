@@ -1,0 +1,22 @@
+<div class="registerPage">
+    <div class="sign-in">
+        <h1>Create account to connect <br> with friends</h1>
+        <button mat-raised-button class="btn-register" routerLink="">Login</button>
+    </div>
+    <div class="sign-up">
+        <h1 class="header">Register</h1>
+        <form action="" [formGroup]="registerForm">
+            <label for="name">User Name</label>
+            <input type="text" class="name" required formControlName="name" placeholder="user name...">
+            <label for="email">Email</label>
+            <input type="text" class="email" required formControlName="email" placeholder="abc@gmail.com">
+            <label for="password">password</label>
+            <input type="text" class="password" required formControlName="password" placeholder="password">
+            <div class="buttons">
+                <div class="register-btn">
+                    <button mat-raised-button class="btn-login" (click)="register()">Register</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

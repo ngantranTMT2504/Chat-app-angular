@@ -1,0 +1,20 @@
+<div class="loginPage">
+    <div class="login">
+        <h1>Sign in</h1>
+        <form action="" [formGroup]="loginForm">
+            <label for="name">Email</label>
+            <input type="text" class="email" required formControlName="email" placeholder="abc@gmail.com">
+            <label for="email">Password</label>
+            <input type="text" class="password" required formControlName="password" placeholder="password">
+            <div class="buttons">
+                <div class="login-btn">
+                    <button mat-raised-button class="btn-login" (click)="login()">Login</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="login-right">
+        <h1>Sign in to connect <br> with friends</h1>
+        <button mat-raised-button class="btn-register" routerLink="/register">Register</button>
+    </div>
+</div>

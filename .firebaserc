@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "chat-box-angular": {
+      "hosting": {
+        "chatApp": [
+          "chat-box-angular"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "chat-box-angular"
+  }
+}

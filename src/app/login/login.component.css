@@ -1,0 +1,73 @@
+.loginPage {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.login-right {
+    background-image: linear-gradient(to bottom,
+            rgba(68, 241, 232, 0.25),
+            rgb(0, 0, 255, 0.25)), url('src/assets/images/connect1.avif');
+    background-color: transparent;
+    border-radius: 5%;
+    height: 80vh;
+}
+
+.login-right h1 {
+    text-align: center;
+    margin: 30vh 0 5vh 0;
+}
+
+.login {
+    width: 250px;
+    padding: 10%;
+}
+
+.login h1 {
+    margin: 10px 35%;
+    color: var(--Blue_Greeny);
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.mdc-text-field--filled:not(.mdc-text-field--disabled) {
+    background-color: rgba(255, 222, 173, 0);
+}
+
+.name,
+.email,
+.password {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid gray;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    width: 100%;
+    height: 30px;
+    margin: 10px auto;
+    padding: 5px 10px;
+}
+
+
+.login-btn {
+    padding: 10px 0;
+    display: flex;
+}
+
+.login-btn button , .login-right button{
+    padding: 15px;
+    margin: 10px ;
+    font-size: 15px;
+    background-color: var(--Blue_Greeny);
+    color: var(--Teeny_Greeny);
+    border: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.login-right button{
+    margin: 10px 38%;
+    background-color: var(--Pinky);
+    color: black;
+}
+
+.login-btn button:hover {
+    transform: scale(1.1);
+}
+
