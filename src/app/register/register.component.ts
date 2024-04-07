@@ -12,7 +12,6 @@ import { ServiceService } from '../service/service.service';
 export class RegisterComponent {
   registerForm!: FormGroup;
   userObj: User = {
-    id: '',
     name: '',
     email: '',
     password: '',
@@ -34,15 +33,13 @@ export class RegisterComponent {
       alert('email or password is incorrect');
       return;
     }
-    localStorage.setItem('name', this.registerForm.value.name);
     this.auth.register(this.registerForm.value.email, this.registerForm.value.password);
-    this.userObj.id = this.registerForm.value.email;
     this.userObj.name = this.registerForm.value.name;
     this.userObj.email = this.registerForm.value.email;
     this.userObj.password = this.registerForm.value.password;
     this.userObj.avatarUrl = 'src/assets/images/male-avt.png';
 
-    this.data.addUser(this.userObj);
+    this.data.addUser(this.userObj, this.registerForm.value.email);
 
     this.registerForm.value.email = '';
     this.registerForm.value.password = '';
